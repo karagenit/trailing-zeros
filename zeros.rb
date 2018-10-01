@@ -5,10 +5,9 @@ input = gets.chomp.to_i
 zeros = 0
 
 for i in (1..input)
-  val = i
-  while (val % 5) == 0
+  while (i % 5) == 0
     zeros += 1
-    val /= 5
+    i /= 5
   end
 end
 
